@@ -1,12 +1,12 @@
 # Annotation of a subset of VIRAT AERIAL dataset
 
-VIRAT dataset http://www.viratdata.org/ is a DARPA dataset containing mainly ground static video and provide a ground truth.
+VIRAT dataset http://www.viratdata.org/ is a DARPA dataset containing mainly ground static videos and corresponding ground truth.
 
 VIRAT also contains an AERIAL dataset (set of video acquired by a plane).
 No ground truth is provided for these data.
 
-However, I have annotated a small subset of this dataset for person detection and tracking.
-This ground truth or metadata is released here for research purpose.
+This is why, I have annotated a small subset of these aerial data for person detection and tracking.
+This ground truth (or metadata) is released for research purpose only.
 (Contact ONERA for commercial purpose)
 
 **THE METADATA IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE METADATA OR THE USE OR OTHER DEALINGS IN THE METADATA.**
@@ -24,7 +24,7 @@ Track file format is
 - 2nd line contains the number of images during which the track is alive
 - then the file contains 4*size lines: each 4 lines corresponds to a rectangle in x,y,w,h coordinate (so line 3 is x of the rect in the image where the track starts, line 4 is y, line 5 is w, line 6 is h, line 7 is x in the frame following the starting one and etc.)
 
-## Synchronizing of the ground truth with original data
+## Synchronizing the ground truth with original data
 Link between the original video and the selected subsequence has been lost.
 
 We provide the first image of each subsequence (unfortunately with some pre processing like croping black pixel and compressing in .jpg).
